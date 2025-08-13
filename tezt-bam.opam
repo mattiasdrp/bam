@@ -14,7 +14,7 @@ depends: [
   "dune" {>= "3.7" & >= "3.7"}
   "tezt" {>= "4.0"}
   "bam"  {>= "0.3"}
-  "bam-ppx" {>= "0.3"}
+  "bam-ppx" {with-test}
   "mtime" {>= "2.0"}
   "odoc" {with-doc}
 ]
@@ -34,4 +34,3 @@ build: [
 ]
 dev-repo: "git+https://github.com/francoisthire/bam.git"
 available: arch != "arm32" & arch != "x86_32"
-
